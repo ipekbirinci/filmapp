@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val myTextView = binding.deneme
-        myTextView.text="Selam"
-        val filmOne=FilmData("The Lobster",2012,"klasik")
+        val myTextView = binding.movieid
+        val filmOne=FilmData("Naruto",2012,"klasik")
+        myTextView.text=filmOne.name;
         val filmTwo=FilmData("John Wick",2014,"url")
     }
 
